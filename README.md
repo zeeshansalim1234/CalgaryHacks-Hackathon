@@ -9,7 +9,7 @@ Our primary focus was creating a user-friendly front end website inorder to enha
 <h2> Steps to run the website</h2>
 
 1. Clone the repository
-2. Open index.html file
+2. Open index.html files
 
 <h2> Tools used: </h2>
 
