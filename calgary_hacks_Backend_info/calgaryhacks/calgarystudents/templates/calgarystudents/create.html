@@ -1,0 +1,14 @@
+{% extends 'calgarystudents/base.html' %}
+
+{% block title %} Create New List {% endblock %}
+
+{% block content %} 
+Registration  
+<form method="post" action= "/create/">
+	{% csrf_token %}
+	{{form.as_p}}
+	<button type="submit",name="save">Submit</button>
+</form>
+
+{% endblock %}
+ 

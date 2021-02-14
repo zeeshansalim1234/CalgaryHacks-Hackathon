@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+        <title>
+            Zeeshan's Blog 
+        </title>
+        <link rel="stylesheet" href="./firstcss.css">
+    
+<body>
+    <header id="mainHeader">
+        <div class="container"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;Blog post </h1></div>
+            {% load static %}
+            <link rel="stylesheet" href="{ % static 'frontend.css' %}">
+    </header>
+
+
+<nav id="mainNav">
+    <div class="container">
+        <ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#">Home</a></li>
+            <li><a href="https://github.com/zeeshansalim1234" target ="_blank">Github</a></li>
+            <li><a href="https://www.instagram.com/zxxshan">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        
+        </ul>
+    </div>
+</nav>
+
+
+<section id="jumbo">
+    <div id="container">
+        <h1>
+            
+        </h1>
+    </div>
+</section>
+
+
+<div id="container">
+    <aside id="sidebar">
+        <h2>
+            My Bio
+        </h2>
+        <P title="This is the first paragraph">
+            Welcome to Zeeshan S. Chougle's blog post.
+            </P>
+            <P title= 'This the second paragraph'>
+                I am a second year software engineering student at University of Calgary.
+            </P>
+            <P>
+                Phone no: +971 544041439 <br>
+                DOB : 10/09/01 <br>
+                Age: 19 <br><br>
+                Hobbies : <br>
+                
+            </P>
+                <ol type="1" start="1">
+                    <li>Sketching</li>
+                    <li>Painting</li>
+                    <li>Swimming</li>
+                    <li>Ice Skating</li>
+                    <li>Video games</li>
+                </ol>
+                
+            
+            <br>
+    </aside>
+    <section id="main">
+        
+        <a href="https://github.com/zeeshansalim1234" target ="_blank">
+            <img src="github.PNG" alt="">
+        </a>
+    
+
+
+    </section>
+</div>
+
+
+ <!-- <div class="container">
+</div> -->
+
+
+
+<!-- 
+<form action="http://127.0.0.1:8000/" id="my-form" > -->
+    <form method="post" action= "/create/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit",name="save">Submit</button>
+</form>
+
+    <fieldset>
+        <legend>Wanna Collab?</legend>
+
+        Name: <br>
+        <input type="text" name="firstName" value=""><br>
+        Email id: <br>
+        <input type="text" name="Email" value=""><br>
+        <input type="radio" name="options"> Male 
+        <input type="radio" name="options"> Female <br> 
+        <input type ="checkbox" name="checkboxes" > Full time student ? <br><br>
+        <input type="submit" value="Submit"> 
+
+    </fieldset>
+</form>
+<br>
+
+
+
+<footer id="mainFooter">
+<p>
+    Copyright &copy 2020 Zeeshan Chougle
+</p>
+
+</footer>
+
+<script src="main.js">
+</script>
+</body>
+</html>
