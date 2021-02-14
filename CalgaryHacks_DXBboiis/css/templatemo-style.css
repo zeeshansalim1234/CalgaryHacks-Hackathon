@@ -379,6 +379,7 @@ p {
 .tm-bg-black-transparent {
   background-color: rgba(15, 29, 32, 0.76);
   color: white;
+  margin-left: 70px;
 }
 
 .tm-about-header {
